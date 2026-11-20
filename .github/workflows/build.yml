@@ -14,11 +14,11 @@ jobs:
         with:
           submodules: recursive
 
-      - name: Install NDK r26d
-        run: $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager "ndk;26.1.10909125"
+      - name: Install NDK r27c
+        run: $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager "ndk;27.2.12479018"
 
       - name: Compile Zygisk Library
-        run: $ANDROID_HOME/ndk/26.1.10909125/ndk-build -C module
+        run: $ANDROID_HOME/ndk/27.2.12479018/ndk-build -C module
 
       - name: Package Magisk Module Zip
         run: |
