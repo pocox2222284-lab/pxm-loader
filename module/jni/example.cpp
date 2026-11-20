@@ -18,7 +18,7 @@ public:
     void preAppSpecialize(AppSpecializeArgs *args) override {
         const char *process = env->GetStringUTFChars(args->nice_name, nullptr);
         if (process != nullptr) {
-            if (strcmp(process, "com.subg.imobile") == 0) {
+            if (strcmp(process, "com.pubg.imobile") == 0) {
                 should_load = true;
             }
             env->ReleaseStringUTFChars(args->nice_name, process);
